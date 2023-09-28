@@ -29,7 +29,7 @@ const Home = () => {
         {/* Intro Text Box */}
 
         <div
-          className={`${styles.flexCenter} relative top-[5rem] md:mx-10 lg:mx-16 md:top-[40%] 2xl:w-full 2xl:max-w-[600px] 2xl:top-[25rem] 2xl:py-10 2xl:px-8 py-6 px-3 mx-auto w-[90%] max-w-[470px] border border-White z-10`}
+          className={`${styles.flexCenter} relative top-[5rem] md:mx-10 lg:mx-16 md:top-[40%] 2xl:w-full 2xl:max-w-[600px] 2xl:top-[20rem] 2xl:py-10 2xl:px-8 py-6 px-3 mx-auto w-[90%] max-w-[470px] border border-White z-10`}
         >
           <h1
             className={`${styles.headingOne} text-[30px] leading-[45px] md:text-[32px] md:leading-[50px] text-White 2xl:text-[70px] 2xl:leading-[90px]`}
