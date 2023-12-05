@@ -1,8 +1,23 @@
 import { Suspense, lazy } from "react";
 import { desktopImgs, mobileImgs } from "../images";
 import { styles } from "../styles";
+import { motion } from "framer-motion";
 
 const Navbar = lazy(() => import("./Navbar"));
+
+const variants = {
+  initial: {
+    opacity: 0,
+    x: -500,
+  },
+  animate: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 1,
+    },
+  },
+};
 
 const Home = () => {
   return (
@@ -28,7 +43,10 @@ const Home = () => {
         <Navbar />
         {/* Intro Text Box */}
 
-        <div
+        <motion.div
+          variants={variants}
+          initial="initial"
+          animate="animate"
           className={`${styles.flexCenter} relative top-[5rem] md:mx-10 lg:mx-16 md:top-[40%] 2xl:w-full 2xl:max-w-[600px] 2xl:top-[20rem] 2xl:py-10 2xl:px-8 py-6 px-3 mx-auto w-[90%] max-w-[470px] border border-White z-10`}
         >
           <h1
@@ -37,7 +55,7 @@ const Home = () => {
             immersive experiences that <br className="block md:hidden" />{" "}
             deliver
           </h1>
-        </div>
+        </motion.div>
       </div>
     </Suspense>
   );
