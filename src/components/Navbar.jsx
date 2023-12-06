@@ -58,7 +58,7 @@ const Navbar = () => {
           >
             {/* Menu Overlay Content */}
             <div
-              aria-describedby="menu overlay"
+              aria-describedby="menu overlay for mobile devices"
               className="flex items-center justify-between px-5 py-8"
             >
               {/* logo */}
