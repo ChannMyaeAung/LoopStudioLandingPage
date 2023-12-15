@@ -48,7 +48,11 @@ const Footer = () => {
                 className="self-center"
               >
                 <a href={href}>
-                  <img src={icon} alt="" className="2xl:w-[30px] h-[30px]" />
+                  <img
+                    src={icon}
+                    alt={icon}
+                    className="2xl:w-[30px] h-[30px]"
+                  />
                 </a>
               </motion.li>
             );
