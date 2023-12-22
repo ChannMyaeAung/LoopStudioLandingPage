@@ -23,7 +23,7 @@ const Aboutus = () => {
         {/* Mobile */}
         <img
           src={mobileImgs.imgInteractive}
-          alt="interactive-vr"
+          alt="interactive VR on mobile device"
           loading="lazy"
           className="md:hidden"
         />
@@ -31,7 +31,7 @@ const Aboutus = () => {
         <div className="hidden md:block">
           <img
             src={desktopImgs.imgInteractive}
-            alt="interactive-vr"
+            alt="interactive VR on desktop"
             loading="lazy"
             className="object-cover md:w-full xl:h-full clip-me"
           />
